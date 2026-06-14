@@ -1,30 +1,19 @@
-# =============================================================================
-# UPPTIME CONFIG — Faisal Affan Labs Status Page
-# =============================================================================
-
 owner: faisalaffan
 repo: upptime
 user-agent: faisalaffan
 
 sites:
-  # --- Showcase ---
   - name: Faisal Affan Labs (Showcase)
     url: https://showcase.faisalaffan.com
-    maxResponseTime: 3000
-
-  # --- Ragi Instant ---
-  - name: Ragi Instant API
-    url: https://ragi-instant.vercel.app/api/health
-    maxResponseTime: 5000
 
   - name: Ragi Instant Web
     url: https://ragi-instant.vercel.app
-    maxResponseTime: 4000
 
-  # --- Fowcuzz ---
+  - name: Ragi Instant API
+    url: https://ragi-instant.vercel.app/api/health
+
   - name: Fowcuzz Landing
     url: https://fowcuzz.com
-    maxResponseTime: 3000
 
 assignees:
   - faisalaffan
@@ -32,50 +21,11 @@ assignees:
 status-website:
   baseUrl: /upptime
   name: Faisal Affan Labs Status
-  logoUrl: https://showcase.faisalaffan.com/images/fowcuzz-icon.png
   navbar:
     - title: Status
       href: /
     - title: Showcase
       href: https://showcase.faisalaffan.com
 
-i18n:
-  activeIncidents: Active Incidents
-  allSystemsOperational: All Systems Operational
-  incidentReport: "Incident #$NUMBER report →"
-  activeIncidentSummary: Opened at $DATE with $POSTS posts
-  incidentTitle: Incident $NUMBER Details
-  incidentDetails: Incident Details
-  incidentFixed: Fixed
-  incidentOngoing: Ongoing
-  incidentOpenedAt: Opened at
-  incidentClosedAt: Closed at
-  incidentSubscribe: Subscribe to Updates
-  incidentViewOnGitHub: View on GitHub
-  incidentCommentSummary: Posted at $DATE by $AUTHOR
-  incidentBack: ← Back
-  pastIncidents: Past Incidents
-  pastIncidentsDescription: This page lists all incidents that have been resolved.
-  activeIncidentsDescription: This page lists all ongoing incidents.
-  liveStatus: Live Status
-  overallUptime: "Overall uptime: $UPTIME"
-  overallUptimeTitle: Overall uptime
-  averageResponseTime: "Average response time: $TIME ms"
-  averageResponseTimeTitle: Average response time
-  sevelLevelUptime: "$LEVEL uptime: $UPTIME"
-  minute: minute
-  minutes: minutes
-  day: day
-  days: days
-  month: month
-  months: months
-  year: year
-  years: years
-
 workflowSchedule:
   uptime: "*/5 * * * *"
-  graphs: "0 0 * * *"
-  responseTime: "0 23 * * *"
-  updateSite: "0 1 * * *"
-  updateTemplate: "0 0 1 * *"
-  summaryPuppeteer: "0 0 1 * *"
