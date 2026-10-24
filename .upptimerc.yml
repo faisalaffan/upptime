@@ -12,15 +12,6 @@ sites:
   - name: Faisal Affan Labs (Showcase)
     url: https://showcase.faisalaffan.com
 
-  - name: Ragi Instant Web
-    url: https://ragi-instant.vercel.app
-
-  - name: Ragi Instant API
-    url: https://ragi-instant.vercel.app/api/health
-
-  - name: Fowcuzz Landing
-    url: https://fowcuzz.com
-
 assignees:
   - faisalaffan
 
