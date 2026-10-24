@@ -18,9 +18,10 @@ assignees:
 status-website:
   baseUrl: /upptime
   name: Faisal Affan Labs Status
+  theme: light
   navbar:
     - title: Status
-      href: /
+      href: /upptime
     - title: Showcase
       href: https://showcase.faisalaffan.com
 
