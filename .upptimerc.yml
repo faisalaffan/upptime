@@ -16,12 +16,12 @@ assignees:
   - faisalaffan
 
 status-website:
-  baseUrl: /upptime
+  cname: status.faisalaffan.com
   name: Faisal Affan Labs Status
   theme: light
   navbar:
     - title: Status
-      href: /upptime
+      href: /
     - title: Showcase
       href: https://showcase.faisalaffan.com
 
