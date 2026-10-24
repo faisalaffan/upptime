@@ -3,6 +3,12 @@ repo: upptime
 user-agent: faisalaffan
 
 sites:
+  - name: Homelab Malang
+    url: https://resolva.faisalaffan.com
+    check: "status-code"
+    expectedStatusCodes:
+      - 200
+
   - name: Faisal Affan Labs (Showcase)
     url: https://showcase.faisalaffan.com
 

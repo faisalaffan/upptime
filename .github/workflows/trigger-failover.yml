@@ -1,0 +1,46 @@
+name: Automated DR Failover Trigger (Tencent Standby)
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  dispatch-failover:
+    name: Dispatch Failover to infra-light
+    if: contains(github.event.issue.labels.*.name, 'status') && contains(github.event.issue.title, 'Homelab Malang')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Repository Dispatch to DevOps Repo
+        run: |
+          echo "=========================================================="
+          echo "🚨 Outage Detected: ${{ github.event.issue.title }}"
+          echo "Triggering DR Sentinel on repo faisalaffan/infra-light..."
+          echo "=========================================================="
+
+          PAT_TOKEN="${{ secrets.GH_PAT || secrets.DEVOPS_DISPATCH_PAT }}"
+          if [ -z "$PAT_TOKEN" ]; then
+            echo "❌ Error: Neither GH_PAT nor DEVOPS_DISPATCH_PAT secret is set in this repository."
+            echo "Please ensure GH_PAT has 'repo' scope to trigger workflows in faisalaffan/infra-light."
+            exit 1
+          fi
+
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token $PAT_TOKEN" \
+            https://api.github.com/repos/faisalaffan/infra-light/dispatches \
+            -d '{"event_type":"homelab-down","client_payload":{"reason":"Homelab down detected by Upptime","issue":"${{ github.event.issue.html_url }}"}}')
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+
+          echo "GitHub API Response Code: $HTTP_CODE"
+          if [[ "$HTTP_CODE" == "204" ]]; then
+            echo "✅ Failover dispatch event 'homelab-down' successfully sent to faisalaffan/infra-light!"
+          else
+            echo "❌ Failed to dispatch event. Response: $BODY"
+            exit 1
+          fi
