@@ -27,3 +27,4 @@ status-website:
 
 workflowSchedule:
   uptime: "*/5 * * * *"
+# Trigger build for status.faisalaffan.com
