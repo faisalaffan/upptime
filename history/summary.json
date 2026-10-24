@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Homelab Malang",
+    "url": "https://resolva.faisalaffan.com",
+    "icon": "https://icons.duckduckgo.com/ip3/resolva.faisalaffan.com.ico",
+    "slug": "homelab-malang",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 807,
+    "timeDay": 807,
+    "timeWeek": 807,
+    "timeMonth": 807,
+    "timeYear": 807,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Faisal Affan Labs (Showcase)",
+    "url": "https://showcase.faisalaffan.com",
+    "icon": "https://icons.duckduckgo.com/ip3/showcase.faisalaffan.com.ico",
+    "slug": "faisal-affan-labs-showcase",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 1336,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 1336,
+    "dailyMinutesDown": {}
+  }
+]
