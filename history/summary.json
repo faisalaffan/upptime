@@ -5,17 +5,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/resolva.faisalaffan.com.ico",
     "slug": "homelab-malang",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "89.73%",
+    "uptimeDay": "37.54%",
+    "uptimeWeek": "89.73%",
+    "uptimeMonth": "89.73%",
+    "uptimeYear": "89.73%",
     "time": 591,
     "timeDay": 374,
     "timeWeek": 591,
     "timeMonth": 591,
     "timeYear": 591,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-10-30": 308,
+      "2026-10-29": 591
+    }
   },
   {
     "name": "Faisal Affan Labs (Showcase)",
